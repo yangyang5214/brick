@@ -88,5 +88,3 @@ if __name__ == '__main__':
     # mv to hexo post target path
     os.system('cd {} && hexo clean && hexo g'.format(git_path))
     os.system('scp -r {} beer:/home/ubuntu/beef'.format(git_path + '/public/*'))
-
-    os.system('cd {} && git add . && git commit -m "boostnote  auto commit" && git push'.format(git_path))
